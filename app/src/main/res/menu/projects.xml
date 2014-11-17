@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pw.monkeys.paul.taskjar.Projects" >
+    <item android:id="@+id/createProjMenuBtn"
+        android:title="Create Project"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/accountInfoMenuBtn"
+        android:title="Account Info"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

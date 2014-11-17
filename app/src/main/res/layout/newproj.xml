@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task Name:"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/newProjName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task Description:"
+        android:id="@+id/phoneIDTxt"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hours"
+        android:id="@+id/textView3"
+        android:layout_toStartOf="@+id/newProjHours"
+        android:layout_alignTop="@+id/newProjHours"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/newProjDescription"
+        android:layout_toEndOf="@+id/phoneIDTxt"
+        android:hint="Make the description short and consise. Include all information that is required to understand a rough idea of the project"
+        android:layout_below="@+id/newProjName"
+        android:layout_toRightOf="@+id/phoneIDTxt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Name the project"
+        android:ems="10"
+        android:id="@+id/newProjName"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/newProjDescription"
+        android:layout_alignStart="@+id/newProjDescription"
+        android:layout_alignRight="@+id/newProjDescription"
+        android:layout_alignEnd="@+id/newProjDescription" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/newProjHours"
+        android:layout_toEndOf="@+id/phoneIDTxt"
+        android:hint="Estimated hours this task will take"
+        android:layout_below="@+id/newProjDescription"
+        android:layout_alignLeft="@+id/newProjDescription"
+        android:layout_alignStart="@+id/newProjDescription" />
+
+</RelativeLayout>
